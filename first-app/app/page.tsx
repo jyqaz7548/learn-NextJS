@@ -4,16 +4,22 @@ import Link from "next/link";
 
 export default function Home() {
   const value = "typescript 최고saddsa";
-  const numlist: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  const numlist: number[] = [2, 3, 4, 5, 6, 7, 8, 9];
+  const nlist: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
   return (
     <div className={styles.container}>
       {numlist.map((value, i) => {
-        console.log(value, i);
         return (
-          <div>
-            <h1>2단</h1>
-            <h2>2*1=2</h2>
+          <div key={i}>
+            <h1>{value}단</h1>
+            {nlist.map((n, j) => {
+              return (
+                <h2>
+                  {value}*{n}={value * n}
+                </h2>
+              );
+            })}
             <br />
           </div>
         );
