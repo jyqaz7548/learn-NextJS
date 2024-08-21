@@ -7,6 +7,10 @@ export default function Home() {
   const numlist: number[] = [2, 3, 4, 5, 6, 7, 8, 9];
   const nlist: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
+  [1, 2, 3, 4, 5].map((value, i) => {
+    value * value;
+  });
+
   return (
     <div className={styles.container}>
       {numlist.map((value, i) => {
@@ -15,7 +19,7 @@ export default function Home() {
             <h1>{value}단</h1>
             {nlist.map((n, j) => {
               return (
-                <h2>
+                <h2 key={i}>
                   {value}*{n}={value * n}
                 </h2>
               );
