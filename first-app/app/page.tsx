@@ -13,7 +13,7 @@ export default function Home() {
         return (
           <div>
             <h1>2단</h1>
-            <h2>2*1=2</h2>)
+            <h2>2*1=2</h2>
             <br />
           </div>
         );
