@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
+import Navbar from "@/components/nevbar";
 
 export default function Home() {
   const value = "typescript 최고saddsa";
@@ -13,11 +14,6 @@ export default function Home() {
 
   return (
     <>
-      <nav>
-        <Link href={"/"}>Home</Link>
-        <Link href={"/counter"}>Counter</Link>
-        <Link href={"/detail"}>Detail</Link>
-      </nav>
       <div className={styles.container}>
         {numlist.map((value, i) => {
           return (

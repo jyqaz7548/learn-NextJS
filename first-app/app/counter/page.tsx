@@ -1,5 +1,6 @@
 "use client";
 
+import Navbar from "@/components/nevbar";
 import { useState } from "react";
 
 export default function counter() {
@@ -22,11 +23,13 @@ export default function counter() {
   // 음수 막기
 
   return (
-    <div>
-      <h1>{value}</h1>
-      <button onClick={plus}>+1</button>
-      <button onClick={minus}>-1</button>
-      <button onClick={reset}>reset</button>
-    </div>
+    <>
+      <div>
+        <h1>{value}</h1>
+        <button onClick={plus}>+1</button>
+        <button onClick={minus}>-1</button>
+        <button onClick={reset}>reset</button>
+      </div>
+    </>
   );
 }
