@@ -6,7 +6,7 @@ import Navbar from "@/components/nevbar";
 const inter = Noto_Sans_KR({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "first-appas",
+  title: "first-app",
   description: "으하하하ㄹ",
 };
 
