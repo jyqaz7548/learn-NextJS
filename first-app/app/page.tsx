@@ -12,27 +12,34 @@ export default function Home() {
   });
 
   return (
-    <div className={styles.container}>
-      {numlist.map((value, i) => {
-        return (
-          <div key={i}>
-            <h1>{value}단</h1>
-            {nlist.map((n, j) => {
-              return (
-                <h2 key={i}>
-                  {value}*{n}={value * n}
-                </h2>
-              );
-            })}
-            <br />
-          </div>
-        );
-      })}
-
-      <h1 className={styles.title}>오늘의기분</h1>
-      <Link href="/detail">sad</Link>
-      <p>{value}</p>
-      <br />
-    </div>
+    <>
+      <nav>
+        <Link href={"/"}>Home</Link>
+        <Link href={"/counter"}>Counter</Link>
+        <Link href={"/detail"}>Detail</Link>
+      </nav>
+      <div className={styles.container}>
+        {numlist.map((value, i) => {
+          return (
+            <div key={i}>
+              <h1>{value}단</h1>
+              {nlist.map((n, j) => {
+                return (
+                  <h2 key={i}>
+                    {value}*{n}={value * n}
+                  </h2>
+                );
+              })}
+              <br />
+            </div>
+          );
+        })}
+        <h1 className={styles.title}>오늘의기분</h1>
+        <Link href="/detail">sad</Link>
+        <a href="/detail">good</a>
+        <p>{value}</p>
+        <br />
+      </div>
+    </>
   );
 }
