@@ -7,7 +7,7 @@ const inter = Noto_Sans_KR({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "my app",
-  description: "으하하",
+  description: "으하하하",
 };
 
 export default function RootLayout({
