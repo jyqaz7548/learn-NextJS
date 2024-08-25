@@ -7,6 +7,7 @@ export default function Navbar() {
         <Link href={"/"}>Home</Link>
         <Link href={"/counter"}>Counter</Link>
         <Link href={"/detail"}>Detail</Link>
+        <Link href={"/my_counter"}>My_counter</Link>
       </nav>
     </>
   );

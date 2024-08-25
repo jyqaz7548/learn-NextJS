@@ -13,6 +13,7 @@ export default function counter() {
   // - > -1
   const minus = () => {
     if (value !== 0) {
+      // 음수 막기
       setValue(value - 1);
     }
   };
@@ -20,7 +21,6 @@ export default function counter() {
   const reset = () => {
     setValue(0);
   };
-  // 음수 막기
 
   return (
     <>

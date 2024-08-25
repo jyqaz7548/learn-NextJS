@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar />
+        <Navbar></Navbar>
         <div style={{ paddingTop: "50px" }}> {children}</div>
       </body>
     </html>
