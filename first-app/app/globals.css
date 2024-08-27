@@ -24,3 +24,9 @@ a {
   color: white;
   display: block;
 }
+
+.childCompBody {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+}
