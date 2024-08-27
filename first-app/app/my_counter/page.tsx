@@ -7,7 +7,7 @@ export default function counter() {
   const [value, setValue] = useState(0);
 
   const plus = () => {
-    setValue(value + 100);
+    setValue(value + 1);
   };
 
   const minus = () => {
