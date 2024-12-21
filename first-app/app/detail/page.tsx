@@ -10,6 +10,8 @@ export interface BaseBallType {
   locate: string;
 }
 
+
+
 const datas: BaseBallType[] = [
   { name: "기아", win: 71, locate: "광주" },
   { name: "삼성", win: 66, locate: "대구" },
